@@ -1,9 +1,12 @@
 var gridster;
 
 			$(function() {
-				gridtster = $(".gridster > ul").gridster({
+				gridtster = $(".gridster ul").gridster({
 					widget_margins: [10, 10], 
 					widget_base_dimensions: [190, 210],
-					min_cols: 6
+					autogrow_cols: true,
+					resize: {
+		              enabled: true,
+                }
 				}).data('gridster');
-			});
+	});
