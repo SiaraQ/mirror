@@ -3,11 +3,15 @@
 	<head>
 		<title>MirrorTest</title>
 		<meta name="author" content="gyurisc">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/jquery.gridster.js" charster="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/jquery.gridster.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,inherit,400" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="weather/css/standardize.css">
         <link rel="stylesheet" href="weather/css/index.css">
+        <link href="clock/css/style.css" rel="stylesheet" />
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
         
 	</head>
 	<body>
@@ -33,23 +37,31 @@
     
                     </li>
                     
-					<li data-row="2" data-col="1" data-sizex="1" data-sizey="1"></li>
+					<li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+                    <div id="clock" class="dark">
+                        <div class="display">
+				        <div class="weekdays"></div>
+				        <!--<div class="alarm"></div>-->
+				        <div class="digits"></div>
+                        </div>
+                    </div>                 
+                    </li>
+                    
 					<li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
 
 					<li data-row="1" data-col="2" data-sizex="2" data-sizey="1"></li>
-					<li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
-
+                    <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
 					<li data-row="1" data-col="4" data-sizex="1" data-sizey="1"></li>
 					<li data-row="2" data-col="4" data-sizex="1" data-sizey="1"></li>
 					<li data-row="3" data-col="4" data-sizex="1" data-sizey="1"></li>			
 				</ul>
 			</div>
 		</section>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
 	    <script src="simpleweather/jquery.simpleWeather.js"></script>
         <script src="simpleweather/jquery.simpleWeather.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/jquery.gridster.js" charster="utf-8"></script>
         <script src="js/gridster.js"></script>
         <script src="js/weather.js"></script>
+        <script src="clock/js/script.js"></script>
 	</body>
 </html>
