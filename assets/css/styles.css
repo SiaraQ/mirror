@@ -35,8 +35,9 @@ h3 {
 }
 
 .gridster {
-    width: 940px;
-    margin: 0 auto;
+    width: 1650px;
+    height: 1200px;
+    margin:  auto;
 
     opacity: .8;
 

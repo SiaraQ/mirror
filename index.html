@@ -3,19 +3,26 @@
 	<head>
 		<title>MirrorTest</title>
 		<meta name="author" content="gyurisc">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <link rel="stylesheet" href="//wilkesalex.github.io/leapstrap/dist/css/leapstrap.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/jquery.gridster.js" charster="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/jquery.gridster.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,inherit,400" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="weather/css/standardize.css">
         <link rel="stylesheet" href="weather/css/index.css">
-
         <link href="clock/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="calendar/calendar.css">
         <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="rss/css/FeedEk.css" rel="stylesheet" type="text/css" />
+        <script src="//js.leapmotion.com/0.3.0-beta3/leap.js"></script>
+        
+        <!-- Include Leapstrap JS -->
+        <script src="//wilkesalex.github.io/leapstrap/dist/js/leapstrap.js"></script>
 	</head>
 	<body>
 		<section class="demo">
+            
 			<div class="gridster">
 				<ul>
 					<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
@@ -37,34 +44,46 @@
     
                     </li>
                     
-					<li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+					<li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
                     <div id="clock" class="dark">
                         <div class="display">
 				        <div class="weekdays"></div>
+				        <!--<div class="alarm"></div>-->
 				        <div class="digits"></div>
                         </div>
                     </div>                 
                     </li>
                     
-					<li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
+					<li data-row="3" data-col="2" data-sizex="2" data-sizey="2">
+                    <div id="ca"></div>
+                    </li>
 
-					<li data-row="1" data-col="2" data-sizex="2" data-sizey="1"></li>
-                    <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
-					<li data-row="1" data-col="4" data-sizex="1" data-sizey="1"></li>
-					<li data-row="2" data-col="4" data-sizex="1" data-sizey="1"></li>
-					<li data-row="3" data-col="4" data-sizex="1" data-sizey="1"></li>			
+					<li data-row="1" data-col="2" data-sizex="2" data-sizey="2">  
+                    <div id="divRss" leap-click-delay="3000"></div>
+                    </li>	
+                    
+                    <li data-row="1" data-col="2" data-sizex="2" data-sizey="2">  
+                        
+                    </li>
+                    
 				</ul>
 			</div>
+            <iframe src="https://embed.spotify.com/?uri=spotify:user:1175900859:playlist:5CD4FqixUIVGGJjreeBPml" frameborder="" allowtransparency="false" width="1920" height=80></iframe>
 		</section>
         
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-        <script type="text/javascript" src="assets/jquery.gridster.js" charster="utf-8"></script>
-        <script src="simpleweather/jquery.simpleWeather.js"></script>
+        
+        <script type="text/javascript" src="rss/js/FeedEk.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+	    <script src="simpleweather/jquery.simpleWeather.js"></script>
         <script src="simpleweather/jquery.simpleWeather.min.js"></script>
         <script src="js/gridster.js"></script>
         <script src="js/weather.js"></script>
         <script src="clock/js/script.js"></script>
-
+        <script src="rss/rss.js"></script>
+        <script src="leapManager/leap.js"></script>
+        <script src="calendar/calendar.js"></script>
+        <script src="calendar/calendar.1.js"></script>
+        <script src="calendar/calendar.2.js"></script>
+        
 	</body>
 </html>
